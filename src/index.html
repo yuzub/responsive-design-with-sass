@@ -5,9 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script>
+        $(document).ready(function(){
+            $(".nav-button").click(function () {
+                $(".nav-button,.primary-nav").toggleClass("open");
+            });    
+        });
+    </script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
-    Hello World!
+    <header class="clearfix">
+        <div class="logo">
+            <img src="images/logo.png" alt="logo">
+            <h1>Dental Title</h1>
+            <h2>A Family Friendly Practice</h2>
+        </div>
+
+        <ul class="social">
+            <li><a href="https://www.youtube.com/"><img src="images/social_tube.png" alt="YouTube"></a></li>
+            <li><a href="https://www.facebook.com/"><img src="images/social_face.png" alt="Facebook"></a></li>
+            <li><a href="https://www.twitter.com/"><img src="images/social_twit.png" alt="Twitter"></a></li>
+        </ul>
+
+        <nav>
+            <ul class="primary-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="repair.html">Repair Options</a></li>
+                <li><a href="prevention.html">Prevention</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <button class="nav-button">Toggle Navigation</button>
+    </header>
+
+    <main>
+        <p>
+            Content will be here.
+        </p>
+    </main>
+
+    <footer>
+        <p>
+            Copyright &copy; Dental &bull; W. Warsh &bull;
+            <a href="tel:(702) 222-7777" class="tel" tabindex="-1">(702) 222-7777</a>
+        </p>
+    </footer>
 </body>
 </html>
